@@ -1,4 +1,4 @@
-udp://www.blueskyxn.com;udp://ae01.alicdn.com;udp://cdn.000714.xyz;udp://cdn.20000714.xyz;udp://cdn.blueskyxn.xyz;udp://gitee.com;udp://github.com;udp://imgapi.000714.xyz;udp://raw.githubusercontent.com;udp://txcdn.000714.xyz;udp://www.blueskyxn.com
+https://www.blueskyxn.com;https://ae01.alicdn.com;https://cdn.000714.xyz;https://cdn.20000714.xyz;https://cdn.blueskyxn.xyz;https://gitee.com;https://github.com;https://imgapi.000714.xyz;https://raw.githubusercontent.com;https://txcdn.000714.xyz;https://cdn.jsdelivr.net;https://bdcdn.20000714.xyz;https://at.alicdn.com;https://fonts.googleapis.com;https://fonts.gstatic.com;https://www.google-analytics.com
 
 
 苍穹の下

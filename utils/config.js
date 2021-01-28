@@ -21,17 +21,34 @@ var LOGO = "https://ae01.alicdn.com/kf/U8bf96e4131d747bea5ddc9f26fb57142l.jpg"; 
 //设置downloadFile合法域名,不带https ,在中括号([])里增加域名，格式：{id=**,domain:'www.**.com'}，用英文逗号分隔。
 //此处设置的域名和小程序与小程序后台设置的downloadFile合法域名要一致。
 var DOWNLOADFILEDOMAIN = [
-    { id: 1, domain: 'www.blueskyxn.com'},
-    { id: 2, domain: 'cdn.000714.xyz'},
-    { id: 3, domain: 'imgapi.000714.xyz'},
-    { id: 4, domain: 'github.com'},
-    { id: 5, domain: 'raw.githubusercontent.com'},
-    { id: 6, domain: 'cdn.blueskyxn.xyz'},
-    { id: 7, domain: 'txcdn.000714.xyz'},
-    { id: 8, domain: 'gitee.com'},
-    { id: 8, domain: 'ae01.alicdn.com'},
-    { id: 9, domain: 'cdn.20000714.xyz'}
-    
+  { id: 1, domain: 'www.blueskyxn.com'},
+  { id: 2, domain: 'cdn.000714.xyz'},
+  { id: 3, domain: 'imgapi.000714.xyz'},
+  { id: 4, domain: 'github.com'},
+  { id: 5, domain: 'raw.githubusercontent.com'},
+  { id: 6, domain: 'cdn.blueskyxn.xyz'},
+  { id: 7, domain: 'txcdn.000714.xyz'},
+  { id: 8, domain: 'gitee.com'},
+  { id: 9, domain: 'ae01.alicdn.com'},
+  { id: 10, domain: 'bdcdn.20000714.xyz'},
+  { id: 11, domain: 'cdn.20000714.xyz'},
+  { id: 12, domain: 'cdn.jsdelivr.net'},
+  { id: 13, domain: 'bdcdn.20000714.xyz'},
+  { id: 14, domain: '*.000714.xyz'},
+  { id: 15, domain: '*.20000714.xyz'},
+  { id: 16, domain: '*.20000714.xyz'},
+  { id: 17, domain: '*.blueskyxn.xyz'},
+  { id: 18, domain: '*.blueskyxn.com'},
+  { id: 19, domain: 'at.alicdn.com'},
+  { id: 20, domain: '*.alicdn.com'},
+  { id: 21, domain: 'fonts.googleapis.com'},
+  { id: 22, domain: '*.googleapis.com'},
+  { id: 23, domain: 'fonts.gstatic.com'},
+  { id: 24, domain: '*.gstatic.com'},
+  { id: 25, domain: 'www.google-analytics.com'},
+  { id: 26, domain: '*.google-analytics.com'},
+  { id: 27, domain: '*.qq.com'},
+  { id: 28, domain: '*.weixin.qq.com'}
 
 ];
 //业务域名，只支持企业主体的小程序
@@ -44,8 +61,26 @@ var BUSINESSDOMAIN = [
   { id: 6, domain: 'cdn.blueskyxn.xyz'},
   { id: 7, domain: 'txcdn.000714.xyz'},
   { id: 8, domain: 'gitee.com'},
-  { id: 8, domain: 'ae01.alicdn.com'},
-  { id: 9, domain: 'cdn.20000714.xyz'}
+  { id: 9, domain: 'ae01.alicdn.com'},
+  { id: 10, domain: 'bdcdn.20000714.xyz'},
+  { id: 11, domain: 'cdn.20000714.xyz'},
+  { id: 12, domain: 'cdn.jsdelivr.net'},
+  { id: 13, domain: 'bdcdn.20000714.xyz'},
+  { id: 14, domain: '*.000714.xyz'},
+  { id: 15, domain: '*.20000714.xyz'},
+  { id: 16, domain: '*.20000714.xyz'},
+  { id: 17, domain: '*.blueskyxn.xyz'},
+  { id: 18, domain: '*.blueskyxn.com'},
+  { id: 19, domain: 'at.alicdn.com'},
+  { id: 20, domain: '*.alicdn.com'},
+  { id: 21, domain: 'fonts.googleapis.com'},
+  { id: 22, domain: '*.googleapis.com'},
+  { id: 23, domain: 'fonts.gstatic.com'},
+  { id: 24, domain: '*.gstatic.com'},
+  { id: 25, domain: 'www.google-analytics.com'},
+  { id: 26, domain: '*.google-analytics.com'},
+  { id: 27, domain: '*.qq.com'},
+  { id: 28, domain: '*.weixin.qq.com'}
 ];
  //首页图标导航
  //参数说明：'name'为名称，'image'为图标路径，'url'为跳转的页面，'redirecttype'为跳转的类型，apppage为本小程序的页面，miniapp为其他微信小程序,webpage为web-view的页面
