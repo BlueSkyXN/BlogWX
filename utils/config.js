@@ -13,27 +13,39 @@
 
 //配置域名,域名只修改此处。
 //如果wordpress没有安装在网站根目录请加上目录路径,例如："www.watch-life.net/blog"
-var DOMAIN = "www.watch-life.net";
-var WEBSITENAME="守望轩"; //网站名称
-var PAGECOUNT='10'; //每页文章数目
-var ZANIMAGEURL = 'https://www.watch-life.net/images/2017/07/zsm400.jpg';//微信鼓励的图片链接，用于个人小程序的赞赏
-var LOGO = "../../images/logo-icon.png"; // 网站的logo图片
+var DOMAIN = "www.blueskyxn.com";
+var WEBSITENAME="苍穹の下"; //网站名称
+var PAGECOUNT='8'; //每页文章数目
+var ZANIMAGEURL = 'https://ae01.alicdn.com/kf/U34b81aef6f9d4deb8b864fcc45bad02aH.jpg';//微信鼓励的图片链接，用于个人小程序的赞赏
+var LOGO = "https://ae01.alicdn.com/kf/U8bf96e4131d747bea5ddc9f26fb57142l.jpg"; // 网站的logo图片
 //设置downloadFile合法域名,不带https ,在中括号([])里增加域名，格式：{id=**,domain:'www.**.com'}，用英文逗号分隔。
 //此处设置的域名和小程序与小程序后台设置的downloadFile合法域名要一致。
 var DOWNLOADFILEDOMAIN = [
-    { id: 1, domain: 'www.watch-life.net'},
-    { id: 2, domain: 'thirdwx.qlogo.cn'},
-    { id: 3, domain: 'wx.qlogo.cn'}
+    { id: 1, domain: 'www.blueskyxn.com'},
+    { id: 2, domain: 'cdn.000714.xyz'},
+    { id: 3, domain: 'imgapi.000714.xyz'},
+    { id: 4, domain: 'github.com'},
+    { id: 5, domain: 'raw.githubusercontent.com'},
+    { id: 6, domain: 'cdn.blueskyxn.xyz'},
+    { id: 7, domain: 'txcdn.000714.xyz'},
+    { id: 8, domain: 'gitee.com'},
+    { id: 8, domain: 'ae01.alicdn.com'},
+    { id: 9, domain: 'cdn.20000714.xyz'}
+    
 
 ];
 //业务域名，只支持企业主体的小程序
 var BUSINESSDOMAIN = [
-  { id: 1, domain: 'www.watch-life.net'},
-  { id: 2, domain: 'blog.minapper.com'},
-  { id: 3, domain: 'plus.minapper.com'},
-  { id: 4, domain: 'www.minapper.com'},
-  { id: 5, domain: 'lite.minapper.com'}
-
+  { id: 1, domain: 'www.blueskyxn.com'},
+  { id: 2, domain: 'cdn.000714.xyz'},
+  { id: 3, domain: 'imgapi.000714.xyz'},
+  { id: 4, domain: 'github.com'},
+  { id: 5, domain: 'raw.githubusercontent.com'},
+  { id: 6, domain: 'cdn.blueskyxn.xyz'},
+  { id: 7, domain: 'txcdn.000714.xyz'},
+  { id: 8, domain: 'gitee.com'},
+  { id: 8, domain: 'ae01.alicdn.com'},
+  { id: 9, domain: 'cdn.20000714.xyz'}
 ];
  //首页图标导航
  //参数说明：'name'为名称，'image'为图标路径，'url'为跳转的页面，'redirecttype'为跳转的类型，apppage为本小程序的页面，miniapp为其他微信小程序,webpage为web-view的页面
@@ -43,18 +55,9 @@ var BUSINESSDOMAIN = [
  //'appid' 当redirecttype为miniapp时，这个值为其他微信小程序的appid，如果redirecttype为apppage，webpage时，这个值设置为空。
  //'extraData'当redirecttype为miniapp时，这个值为提交到其他微信小程序的参数，如果redirecttype为apppage，webpage时，这个值设置为空。
 var INDEXNAV = [
-  { id: '1', name: '专业版', image: '../../images/uploads/minapper.jpg', url: 'pages/index/index', redirecttype: 'miniapp', appid: 'wx074a216a7aabc30c', extraData: '' },
-  { id: '2', name: '增强版', image: '../../images/uploads/minapper-plus.jpg', url: 'pages/index/index', redirecttype: 'miniapp', appid: 'wx46926513e9b706d3', extraData: ''},
-  { id: '2', name: '小商店', image: '../../images/uploads/shop.jpg', url: 'pages/shop/index/index', redirecttype: 'miniapp', appid: 'wx074a216a7aabc30c', extraData: ''},
-  { id: '2', name: '直播', image: '../../images/uploads/live.png', url: '__plugin__/wx2b03c6e691cd7370/pages/live-player-plugin?room_id=11', redirecttype: 'miniapp', appid: 'wx074a216a7aabc30c', extraData: ''},
-  { id: '4', name: '技术支持', image: '../../images/uploads/minapper-bi.png', url: 'pages/social/social', redirecttype: 'miniapp', appid: 'wxc1771b619b83316b', extraData: '' },
-  { id: '5', name: '排行', image: '../../images/uploads/rankings.jpg', url: '../hot/hot', redirecttype: 'apppage', appid: '', extraData: '' },
-  { id: '6', name: '搜索', image: '../../images/uploads/search.jpg', url: '../search/search', redirecttype: 'apppage', appid: '', extraData: '' },
-  { id: '7', name: '小程序', image: '../../images/uploads/miniprogram.png', url: '../list/list?categoryID=1059', redirecttype: 'apppage', appid: '', extraData: '' },
-  { id: '8', name: '官网', image: '../../images/uploads/watch-life.png', url: 'https://www.watch-life.net', redirecttype: 'webpage', appid: '', extraData: '' },
-  { id: '9', name: '言论', image: '../../images/uploads/comment.png', url: '../comments/comments', redirecttype: 'apppage', appid: '', extraData: '' },
-  { id: '10', name: '关于', image: '../../images/uploads/about.jpg', url: '../about/about', redirecttype: 'apppage', appid: '', extraData: '' },
-  { id: '11', name: '站长', image: '../../images/uploads/watch-life.png', url: '../page/page?id=2', redirecttype: 'apppage', appid: '', extraData: '' },
+  { id: '1', name: '官网', image: '../../images/uploads/watch-life.png', url: 'https://www.blueskyxn.com', redirecttype: 'webpage', appid: '', extraData: '' },
+  { id: '3', name: '排行', image: '../../images/uploads/rankings.jpg', url: '../hot/hot', redirecttype: 'apppage', appid: '', extraData: '' },
+  { id: '2', name: '搜索', image: '../../images/uploads/search.jpg', url: '../search/search', redirecttype: 'apppage', appid: '', extraData: '' }
 ];
 
 

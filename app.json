@@ -39,13 +39,7 @@
                 "pagePath": "pages/topic/topic",
                 "iconPath": "images/tab-topic.png",
                 "selectedIconPath": "images/tab-topic-on.png",
-                "text": "专题"
-            },
-            {
-                "pagePath": "pages/readlog/readlog",
-                "iconPath": "images/tab-my.png",
-                "selectedIconPath": "images/tab-my-on.png",
-                "text": "我的"
+                "text": "目录"
             }
         ]
     },
